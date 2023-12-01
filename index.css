@@ -1,5 +1,6 @@
 *, *::after, *::before {
     box-sizing: border-box;
+    margin: 0;
 }
 
 :root {
@@ -201,7 +202,15 @@ body {
 }
 
 .project-body {
-    text-indent: 1rem;
+    padding: 1rem;
+
+    /* text-indent: 1rem; */
     
     color: white;
+}
+
+.project-description {
+    margin: 0;
+
+    /* padding: 1rem; */
 }
