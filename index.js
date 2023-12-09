@@ -13,6 +13,22 @@ function scrollView(elemID) {
     document.getElementById(elemID).scrollIntoView({behavior: "smooth", block: "center"});
 }
 
+function copyToClipboard(elem) {
+    switch (elem) {
+        case 'email':
+            navigator.clipboard.writeText('tobiasg2024@gmail.com');
+            break;
+    
+        case 'phone':
+            navigator.clipboard.writeText('1 415 290-8692');
+            break;
+
+        case 'cpg':
+            navigator.clipboard.writeText('249 17th Avenue, 94121, CA');
+            break;
+    }
+}
+
 // Function to set a cookie
 function setCookie(name, value, days) {
     var expires = "";
@@ -37,20 +53,15 @@ function getCookie(name) {
 }
 
 // Function to track page view
-function trackPageView() {
-    var pagePath = window.location.pathname;
+async function trackPageView() {
     var visitTimestamp = new Date().toUTCString();
 
     // Get or create a unique visitor ID
     var visitorId = getCookie('visitorId');
     if (!visitorId) {
         visitorId = Math.random().toString(36).substring(2) + Date.now().toString(36);
-        setCookie('visitorId', visitorId, 365); // Set a cookie that expires in 10 days
+        setCookie('visitorId', visitorId, 365); // Set a cookie that expires in 365 days
     }
-
-    console.log('Visitor ID:', visitorId);
-    console.log('Page Path:', pagePath);
-    console.log('Visit Timestamp:', visitTimestamp);
 }
 
 // Track page view on page load
