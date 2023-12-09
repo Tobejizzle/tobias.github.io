@@ -21,9 +21,9 @@
         <div id="scroll_sensor"></div>
 
         <div class="topnav">
-            <a href="#about" class="active">Me</a>
+            <a id='me' onclick="scrollView('title_card');" class="active">Me</a>
             <a onclick="scrollView('projects_page');">Projects</a>
-            <a href="#contact">Contact</a>
+            <a onclick="scrollView('contact_page');">Contact</a>
         </div>
         
         <div id="title_card">
@@ -81,6 +81,16 @@
                     </div>
                 </div>
 
+            </div>
+
+        </div>
+
+        <div id="contact_page">
+
+            <div class="contact-container">
+                <div class="contact-node" onclick="copyToClipboard('email')"><p id="email">tobiasg2024@gmail.com</p></div>
+                <div class="contact-node" onclick="copyToClipboard('phone')"><p id="phone">+1 (415) 290-8692</p></div>
+                <div class="contact-node" onclick="copyToClipboard('cpg')"><p id="cpg">249 17th Avenue, 94121, CA</p></div>
             </div>
 
         </div>
