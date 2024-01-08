@@ -21,6 +21,14 @@ body {
     font-size: xx-large;
 }
 
+.mores {
+    color: var(--pink);
+}
+
+ul {
+    color: var(--pink);
+}
+
 /* TOPNAV */
 
 .topnav {
