@@ -1,0 +1,151 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #1c1c1c;
+    color:rgb(217, 167, 18)
+}
+
+.center-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+    height: 500px;
+
+    user-select: none;
+}
+
+#game_announcement {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.game-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80%;
+    
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+
+    border: 5px solid rgb(217, 167, 18);
+    border-bottom: none;
+    border-radius: 1.5rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.game-box h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: 0;
+}
+
+.tile {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 120px;
+    height: 120px;
+
+    border-radius: 1.5rem;
+
+    cursor: pointer;
+    visibility: hidden;
+
+    background-color: rgb(255, 199, 31);
+    color: #1c1c1c;
+}
+.tile:hover {
+    background-color: rgb(217, 167, 18);
+}
+.tile p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 2rem;
+    margin: 0;
+
+    visibility: hidden;
+}
+
+.control-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 20%;
+
+    border: 5px solid rgb(217, 167, 18);
+    border-radius: 1.5rem;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#start_btn {
+    position: absolute;
+    top: 50%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+
+    width: 7rem;
+    height: 3rem;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+
+    background-color: rgb(255, 199, 31);
+    color: #1c1c1c;
+}
+#start_btn:hover {
+    background-color: rgb(217, 167, 18);
+}
+
+#reload_btn {
+    position: relative;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+
+    width: 2.5rem;
+    height: 3rem;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+
+    visibility: hidden;
+
+    text-align: center;
+    font-size: x-large;
+
+    background-color: rgb(255, 31, 31);
+    color: white;
+}
+#reload_btn:hover {
+    background-color: rgb(184, 23, 23);
+}
